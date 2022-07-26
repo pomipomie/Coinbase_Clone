@@ -21,7 +21,7 @@ tr {
 }
 
 tbody tr:hover > td {
-	background: #f8f8f8;
+	background: var(--table__hover);
 }
 
 tbody .tr-no-hover-bg tr:hover > td {
@@ -58,7 +58,7 @@ tr:last-child > td {
 }
 
 th {
-	color: #5b616e;
+	color: var(--grey__text);
 	font-weight: 400;
 	font-size: 14px;
 }

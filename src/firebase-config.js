@@ -3,16 +3,18 @@ import { getFirestore } from 'firebase/firestore';
 import { getAuth } from 'firebase/auth';
 
 const firebaseConfig = {
-  apiKey: 'AIzaSyASa_N9o8jH4DVb2jA2b5VG-yW7wJh7JRA',
-  authDomain: 'coinbase-clone-0101.firebaseapp.com',
-  projectId: 'coinbase-clone-0101',
-  storageBucket: 'coinbase-clone-0101.appspot.com',
-  messagingSenderId: '737129325620',
-  appId: '1:737129325620:web:3b12cdd66bfb2956255661',
+  apiKey: "AIzaSyCYk4syPD3tiDqeP1vC1jDkAazWdEtML4o",
+  authDomain: "coinbase-clone-340bf.firebaseapp.com",
+  projectId: "coinbase-clone-340bf",
+  storageBucket: "coinbase-clone-340bf.appspot.com",
+  messagingSenderId: "140520252244",
+  appId: "1:140520252244:web:4a25b7f6c84f4c1f6f1ec1",
+  measurementId: "G-DNGQQQE8LT"
 };
 
 const app = initializeApp(firebaseConfig);
 const db = getFirestore(app);
 const auth = getAuth(app);
+  
 
 export { db, auth };

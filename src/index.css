@@ -1,4 +1,25 @@
 /* Global styles */
+
+:root {
+  --sign__background: white;
+  --default__background: white;
+  --content__background: #f9f9fd;
+  --default__text: black;
+  --default__hover: rgb(241, 241, 241);
+  --table__hover: #f8f8f8;
+  --grey__text: #5b616e;
+}
+
+:root .dark {
+  --sign__background: #252525;
+  --default__background: #252525;
+  --content__background: #48494a;
+  --default__text: white;
+  --default__hover: #48494a;
+  --table__hover: #363636;
+  --grey__text: #afb0b4;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -8,6 +29,8 @@ body {
   -moz-osx-font-smoothing: grayscale;
   font-size: 16px;
   overscroll-behavior: none;
+  background-color: var(--default__background);
+  color: var(--default__text);
 }
 
 code {

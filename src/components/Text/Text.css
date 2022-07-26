@@ -58,11 +58,11 @@
 }
 
 .text-white {
-	color: white;
+	color: var(--default__text);
 }
 
 .text-grey {
-	color: #5b616e;
+	color: var(--grey__text);
 }
 
 .text-blue {

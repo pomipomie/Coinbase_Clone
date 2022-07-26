@@ -8,6 +8,7 @@ import {
   TableAssets,
   TableYourAssets,
 } from '../components';
+import ContactForm from '../components/ContactForm/Contact';
 
 import { AssetsContext } from '../contexts/AssetsContext';
 import { useContext } from 'react';
@@ -30,6 +31,10 @@ const Assets = () => {
         <Section>
           <SectionTitle title='Watchlist' />
           <TableAssets assets={coinsOnWatchlist} />
+        </Section>
+        <Section>
+          <SectionTitle title='Contact' />
+          <ContactForm/>
         </Section>
       </ContentCenter>
       {isWidthMin1150 && (

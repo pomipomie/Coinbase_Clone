@@ -5,6 +5,7 @@
 	border: none;
 	color: #2151f5;
 	caret-color: #5b616e;
+	background-color: var(--default__background);
 }
 
 .InputAmountDynamicWidth::placeholder {

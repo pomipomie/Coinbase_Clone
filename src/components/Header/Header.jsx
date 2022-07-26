@@ -6,15 +6,18 @@ import Avvvatars from 'avvvatars-react';
 import { IoMenuSharp } from 'react-icons/io5';
 import { ModalContext } from '../../contexts/ModalContext';
 import { UserContext } from '../../contexts/UserContext';
-import { useContext } from 'react';
+import { useContext, useState } from 'react';
 import useMediaQuery from '../../hooks/useMediaQuery';
 import usePath from '../../hooks/usePath';
+import { ThemeContext, themes } from "../themeContext";
 
 const Header = () => {
   let isWidthMin800 = useMediaQuery('(min-width: 800px)');
   const { page } = usePath();
   const { handleOpen } = useContext(ModalContext);
   const { user } = useContext(UserContext);
+  const [darkMode, setDarkMode] = useState(true);
+
 
   return (
     <header className='Header'>
@@ -28,6 +31,21 @@ const Header = () => {
           <Button color='secondary' onClick={() => handleOpen('pay')}>
             Send / Receive
           </Button>
+          <ThemeContext.Consumer>
+          {({ changeTheme }) => (
+              <Button
+              color='primary'
+              onClick={() => {
+                setDarkMode(!darkMode);
+                changeTheme(
+                  darkMode ? themes.dark : themes.light
+                  )
+                }}
+                >
+                  Light / Dark
+                </Button>
+          )}
+          </ThemeContext.Consumer>
           <div className='header__verticalLine'></div>
           <div className='header__avatar' onClick={() => handleOpen('profile')}>
             <Avvvatars value={user?.email || 'Guest'} size={35} />

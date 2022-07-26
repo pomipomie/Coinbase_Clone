@@ -1,5 +1,5 @@
 .TableRowInputText:hover td {
-	background-color: white;
+	background-color: var(--default__background);
 }
 
 .tableRowInputText__cellVerticalAligned {
