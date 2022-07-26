@@ -4,6 +4,12 @@
 ![Coinbase Clone Screenshot](coinbase-clone-preview.jpg)
 [Go to live app](https://coinbase-clone.com/)
 
+# Changes I made ([@pomipomie](https://github.com/pomipomie))
+
+- Contact Form added to Assets page
+- Dark theme and toggle button (Context API)
+- Google Sign-In (works fine with Chrome, Firefox and Edge)
+
 ## What is this and who is it for ⭐
 
 This is a simplified Coinbase clone built with React, Firebase, and the Coinranking API. The app lets you check prices, price histories, and market cap of popular cryptocurrencies. Furthermore, you can simulate trading crypto assets, sending crypto to friends as well as depositing and withdrawing fiat currencies.
