@@ -15,13 +15,13 @@
 }
 
 .btn-secondary {
-	background-color: white;
-	color: black;
+	background-color: var(--default__background);
+	color: var(--default__text);
 	border: 1px solid #d8d8d8;
 }
 
 .btn-secondary:hover {
-	background-color: rgb(241, 241, 241);
+	background-color: var(--default__hover);
 }
 
 .btn-danger {
@@ -67,12 +67,12 @@
 }
 
 .btn-light.btn-secondary {
-	color: black;
+	color: var(--default__text);
 }
 
 .btn-light.btn-secondary:hover {
-	color: black;
-	background-color: white;
+	color: var(--default__text);
+	background-color: var(--default__background);
 }
 
 .btn-light.btn-danger {

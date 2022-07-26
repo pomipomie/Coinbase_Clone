@@ -22,7 +22,7 @@ const SignInForm = () => {
 
   useEffect(() => {
     if (user) navigate('/assets');
-  }, [user]);
+  }, [navigate, user]);
 
   onAuthStateChanged(auth, (currentUser) => setUser(currentUser));
 
@@ -47,6 +47,7 @@ const SignInForm = () => {
         onChange={(e) => setSignInPassword(e.target.value)}
       />
       <Button type='submit'>Sign in with Email</Button>
+      <Button onClick={(e) => handleSignIn('google', e)}>Sign in with Google</Button>
       <Text>
         Don't have an account yet? <a href='/signup'>Sign up</a>
       </Text>

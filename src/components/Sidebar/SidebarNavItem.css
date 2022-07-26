@@ -9,7 +9,7 @@
 }
 
 .SidebarNavItem:hover {
-	background-color: #eef0f3;
+	background-color: var(--default__hover);
 }
 
 .SidebarNavItem:hover svg,
@@ -24,7 +24,7 @@
 	width: 32px;
 	height: 32px;
 	border-radius: 50%;
-	background-color: #eef0f3;
+	background-color: var(--default__hover);
 }
 
 .sidebarNavItem__icon {

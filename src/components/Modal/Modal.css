@@ -17,7 +17,7 @@
 	align-items: center;
 	z-index: 11;
 	width: 500px;
-	background: #fff;
+	background: var(--default__background);
 	border-radius: 8px;
 }
 
