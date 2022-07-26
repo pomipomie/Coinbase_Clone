@@ -2,6 +2,7 @@ import AuthError from './Auth/AuthError';
 import AuthLayout from './Auth/AuthLayout';
 import Button from './Button/Button';
 import ChartPortfolio from './Charts/ChartPortfolio';
+import ContactForm from './ContactForm/Contact';
 import Content from './Content/Content';
 import ContentCenter from './Content/ContentCenter';
 import ContentRight from './Content/ContentRight';
@@ -67,6 +68,8 @@ import TableYourAssets from './Tables/TableYourAssets';
 import Text from './Text/Text';
 import Tooltip from './Tooltip/Tooltip';
 import TransactionForm from './TransactionForm/TransactionForm';
+import {ThemeContext} from './themeContext';
+import ThemeWrapper from "./themeWrapper";
 
 export {
   AuthLayout,
@@ -78,6 +81,7 @@ export {
   Sidebar,
   SidebarNavItem,
   Header,
+  ContactForm,
   Content,
   ContentCenter,
   ContentRight,
@@ -138,4 +142,6 @@ export {
   Logo,
   Footer,
   TransactionForm,
+  ThemeContext,
+  ThemeWrapper
 };
